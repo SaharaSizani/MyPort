@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="Testing.css" rel="stylesheet" />
+    <link href="Portfolio.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -93,9 +93,6 @@
           <h2>Siwe Sizani</h2>
           <div class="sec2__aboutme1Social">
             <ul>
-              <li>
-                <a href="https://www.instagram.com/siwe_sizani/"><i class="fab fa-instagram"></i></a>
-              </li>
               <li>
                 <a href="https://www.sololearn.com/en/profile/5582630">
                   <img src="Pictures/sololearn.jpg" style="width: 150px; height: 100px;"></a>
@@ -227,49 +224,38 @@ collaborative style and as such work well with teams. <br><br><br>
       </div>
     </section>
     
-    <div id="projects">
-      <header class="head"> <h1>PROJECTS</h1></header>
+    <section id="projects">
+      <div class="sec2__heading">
+        <h2>Projects</h2>
+      </div>
       <div id="pp">
         <div class="container" data-aos="flip-left">
           <a href="https://mkfashionpage.netlify.app/">
-              <img src="Pictures/MkAfrican.jpg" class="p" alt="">
+            <img src="Pictures/MkAfrican.jpg" class="p" alt="">
           </a>
           <h3>
-            M.K African Attire was created by Moloko Kganyakgo<br> a 33 year old fashion designer and
-            tailor collaborated with the Dev Champs<br> to create a beautiful platform for customers 
-            to interact and order their african attires.<br> 
-            M.K African attire specializes in designed garments for all special occasions 
-             </h3>
+            M.K African attire website aims to specialize in designed garments for all special occasions. 
+          </h3>
+        </div>
+        <div class="container" data-aos="flip-left">
+          <a href="https://">
+            <img src="Pictures/BankingApp.gif" class="p" alt="">
+          </a>
+          <h3>
+            The aim of the Banking App is to make it easy to monitor your money on the go. It helps to do all the transactions on your device.
+          </h3>
+        </div>
+        <div class="container" data-aos="flip-left">
+          <a href="https://">
+            <img src="Pictures/Library.gif" class="p" alt="">
+          </a>
+          <h3>
+            <!-- Description for Library project -->
+          </h3>
+        </div>
       </div>
-      <div class="container" data-aos="flip-left">
-        <a href="https:">
-            <img src="Pictures/Chatbot.gif" class="p" alt="">
-        </a>
-        <h3>
-          The
-           </h3>
-    </div>
-    <div class="container" data-aos="flip-left">
-      <a href="https:">
-          <img src="Pictures/BankingApp.gif" class="p" alt="">
-          
-      </a>
-      <h3>
-        M.K African Attire was created by Moloko Kganyakgo<br> a 33 year old fashion designer and
-        
-         </h3>
-  </div>
-  <div class="container" data-aos="flip-left">
-    <a href="https:">
-        <img src="Pictures/Library.gif" class="p" alt="">
-    </a>
-    <h3>
-      M.K African Attire was created by Moloko Kganyakgo<br> a 33 year old fashion designer and
-      tailor collaborated with the Dev Champs to create a beautiful platform for customers to<br>
-      
-       </h3>
-</div>
-      
+    </section>
+    
     <section class="sec4" id="section4">
       <div class="sec4__container">
         <div class="sec4__box1">
@@ -350,6 +336,24 @@ collaborative style and as such work well with teams. <br><br><br>
       crossorigin="anonymous"
     >
 </script>
+
+<script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+ 
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+  </script>
     <script>
       const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
